@@ -46,18 +46,25 @@
         /* NAVE */
        .spaceship {
     position: absolute;
-    top: 180px;
-    left: 288px;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
 
     width: 64px;
     height: 64px;
 
-    background-color: red;
     background-image: url('image/navepixel.png');
-    background-size: contain;
+    background-size: 64px 64px;
     background-repeat: no-repeat;
+    background-position: center;
+
+    image-rendering: pixelated;
 
     z-index: 10;
+    opacity: 1;
+
+    transition: top 1s ease-out;
+}
 }
 
         .spaceship.visible {
